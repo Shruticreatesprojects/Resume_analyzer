@@ -1,0 +1,31 @@
+Project name :-                                                                            AI-Based Resume Analyzer
+  
+Day:- 1
+
+1} Create a account on gift hub 
+ # username 
+*chanchalpagar9 
+*Shruticreatesprojects 
+*Dhanashri-2007
+ 
+ AI Resume Analyzer project commands:-
+
+git init
+git add .
+git commit -m "First commit"
+git branch -M main
+git remote add origin https://github.com/YourUsername/Resume_analyzer.git
+git push -u origin main
+
+ push an existing repository from the command line
+
+git remote add origin https://github.com/YourUsername/Resume_analyzer.git
+git branch -M main
+git push -u origin main
+
+💡 IMPORTANT (REMEMBER THIS)
+
+👉 Whenever django-admin fails
+✔ Always use:
+
+python -m django
