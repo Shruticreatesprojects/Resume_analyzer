@@ -1,0 +1,697 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   BODY
+============================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #08111f;
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.sidebar {
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    width: 240px;
+
+    height: 100vh;
+
+    background: #0d192b;
+
+    border-right: 1px solid #263b55;
+
+    padding: 25px 15px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.logo span {
+    color: #3290f0;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.nav-link {
+    display: block;
+
+    text-decoration: none;
+
+    color: #9aa9bd;
+
+    padding: 13px 15px;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+
+.nav-link:hover {
+    background: #182b45;
+
+    color: white;
+}
+
+
+.nav-link.active {
+    background: #2478d1;
+
+    color: white;
+}
+
+
+/* SIDEBAR BOTTOM */
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+.main-content {
+    margin-left: 240px;
+
+    padding: 25px 35px;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #263b55;
+}
+
+
+.header h2 {
+    margin-bottom: 5px;
+}
+
+
+.header p {
+    color: #8998ad;
+
+    font-size: 14px;
+}
+
+
+.header-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.notification {
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.profile-circle {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #2478d1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+.profile small {
+    display: block;
+
+    color: #8998ad;
+
+    margin-top: 3px;
+}
+
+
+/* ==============================
+   WELCOME
+============================== */
+
+.welcome {
+    margin: 30px 0;
+}
+
+
+.welcome h1 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+.welcome p {
+    color: #8998ad;
+}
+
+
+/* ==============================
+   TOP CARDS
+============================== */
+
+.top-cards {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* CARD */
+
+.card {
+    background: #101e32;
+
+    border: 1px solid #263b55;
+
+    border-radius: 12px;
+
+    padding: 25px;
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+
+.card > p {
+    color: #8998ad;
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   UPLOAD
+============================== */
+
+.upload-box {
+    border: 2px dashed #526984;
+
+    background: #0c1829;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.upload-box:hover {
+    border-color: #2478d1;
+}
+
+
+.upload-icon {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.upload-box h4 {
+    margin-bottom: 8px;
+}
+
+
+.upload-box p {
+    color: #8998ad;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+input[type="file"] {
+    width: 100%;
+
+    padding: 10px;
+
+    background: #16263d;
+
+    color: #b9c6d8;
+
+    border: 1px solid #304761;
+
+    border-radius: 6px;
+}
+
+
+/* ==============================
+   BUTTON
+============================== */
+
+button {
+    padding: 11px 20px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2478d1;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background: #3290f0;
+
+    transform: translateY(-2px);
+}
+
+
+#uploadMessage {
+    margin-top: 15px;
+
+    color: #26d477;
+}
+
+
+/* ==============================
+   MATCH SCORE
+============================== */
+
+.match-card {
+    text-align: center;
+}
+
+
+.score-circle {
+    width: 140px;
+
+    height: 140px;
+
+    margin: 20px auto;
+
+    border-radius: 50%;
+
+    border: 10px solid #26d477;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.score-circle span {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #26d477;
+}
+
+
+.good {
+    color: #26d477;
+
+    margin-bottom: 10px;
+}
+
+
+.match-card button {
+    width: 100%;
+}
+
+
+/* ==============================
+   SECTION
+============================== */
+
+.features-section {
+    margin-top: 35px;
+}
+
+
+.section-title {
+    padding: 15px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+.section-title h2 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+.section-title p {
+    font-size: 13px;
+
+    color: #d0d8e3;
+}
+
+
+.common {
+    background: #126f50;
+}
+
+
+.rare {
+    background: #806720;
+}
+
+
+/* ==============================
+   FEATURE GRID
+============================== */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.feature-card {
+    background: #101e32;
+
+    border: 1px solid #263b55;
+
+    border-radius: 12px;
+
+    padding: 25px;
+}
+
+
+.feature-icon {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-card h3 {
+    margin-bottom: 15px;
+}
+
+
+.feature-card p {
+    color: #8998ad;
+
+    line-height: 1.5;
+
+    margin: 15px 0;
+}
+
+
+.feature-score {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.green {
+    color: #26d477;
+}
+
+
+.orange {
+    color: #ff8a3d;
+}
+
+
+.yellow {
+    color: #f4c542;
+}
+
+
+/* ==============================
+   PROGRESS
+============================== */
+
+.progress {
+    width: 100%;
+
+    height: 7px;
+
+    background: #26384f;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+}
+
+
+.progress-fill {
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+
+.ats {
+    width: 92%;
+
+    background: #26d477;
+}
+
+
+.keywords {
+    width: 65%;
+
+    background: #ff8a3d;
+}
+
+
+.grammar {
+    width: 85%;
+
+    background: #f4c542;
+}
+
+
+/* ==============================
+   RARE FEATURES
+============================== */
+
+.rare-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.rare-card {
+    display: flex;
+
+    gap: 20px;
+
+    background: #101e32;
+
+    border: 1px solid #263b55;
+
+    border-radius: 12px;
+
+    padding: 25px;
+}
+
+
+.rare-icon {
+    font-size: 35px;
+}
+
+
+.rare-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.rare-card p {
+    color: #8998ad;
+
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #69798e;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1000px) {
+
+    .top-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+
+        padding: 20px;
+    }
+
+    .dashboard {
+        display: block;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rare-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+}
