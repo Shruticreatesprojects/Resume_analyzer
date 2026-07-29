@@ -2,125 +2,474 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AI Resume Analyzer</title>
+    <title>Resume Master AI</title>
 
-    <!-- Connect CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Connect CSS -->
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <!-- ==============================
+         SIDEBAR
+    =============================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
 
         <div class="logo">
-            AI Resume Analyzer
+            <h2>RESUME</h2>
+            <span>MASTER AI</span>
         </div>
 
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <a href="#" class="nav-link active">
+                🏠 Dashboard
+            </a>
+
+            <a href="#" class="nav-link">
+                📄 My Resume
+            </a>
+
+            <a href="#" class="nav-link">
+                📊 Analytics
+            </a>
+
+            <a href="#" class="nav-link">
+                🎤 AI Interview
+            </a>
+
+            <a href="#" class="nav-link">
+                💼 Job Matches
+            </a>
+
+            <a href="#" class="nav-link">
+                ⚙️ Settings
+            </a>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-link">
+                ❓ Help
+            </a>
+
+            <a href="#" class="nav-link">
+                🚪 Logout
+            </a>
+
         </div>
 
-    </nav>
+    </aside>
 
 
-    <!-- Main Section -->
-    <main>
 
-        <!-- Hero Section -->
-        <section class="hero">
+    <!-- ==============================
+         MAIN CONTENT
+    =============================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h2>Dashboard</h2>
+
+                <p>
+                    Manage your resume and career opportunities
+                </p>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <span class="notification">
+                    🔔
+                </span>
+
+                
+<div class="profile">
+
+    <div class="profile-circle">
+        👤
+    </div>
+
+</div>
+        </header>
+
+
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
 
             <h1>
-                AI Resume Analyzer
+                Welcome To resume master AI!
             </h1>
 
             <p>
-                Analyze your resume with AI and improve your
-                chances of getting your dream job.
+                Let's improve your resume and help you find your dream job.
             </p>
 
         </section>
 
 
-        <!-- Analyzer Container -->
-        <section class="analyzer-container">
+
+        <!-- ==============================
+             TOP CARDS
+        =============================== -->
+
+        <section class="top-cards">
 
 
-            <!-- Resume Upload Section -->
-            <div class="card">
+            <!-- UPLOAD RESUME -->
 
-                <h2>Upload Your Resume</h2>
+            <div class="card upload-card">
+
+                <h3>
+                    📄 Upload Your Resume
+                </h3>
 
                 <p>
-                    Upload your resume in PDF or DOCX format.
+                    Upload your latest resume to start AI analysis.
                 </p>
+
 
                 <div class="upload-box">
 
                     <div class="upload-icon">
-                        📄
+                        ⬆️
                     </div>
 
+                    <h4>
+                        Upload Your Resume
+                    </h4>
+
                     <p>
-                        Choose your resume file
+                        Supported formats: PDF, DOC, DOCX
                     </p>
 
-                    <input 
+
+                    <input
                         type="file"
+                        id="resumeFile"
                         accept=".pdf,.doc,.docx"
                     >
 
                 </div>
 
+
+                <button id="uploadBtn">
+                    Analyze Resume
+                </button>
+
+
+                <p id="uploadMessage"></p>
+
             </div>
 
 
-            <!-- Job Description Section -->
-            <div class="card">
 
-                <h2>Job Description</h2>
+            <!-- MATCH SCORE -->
+
+            <div class="card match-card">
+
+                <h3>
+                    Resume Match Score
+                </h3>
 
                 <p>
-                    Paste the job description below.
+                    Your overall resume performance
                 </p>
 
-                <textarea 
-                    placeholder="Paste the job description here..."
-                ></textarea>
+
+                <div class="score-circle">
+
+                    <span>
+                        88%
+                    </span>
+
+                </div>
+
+
+                <h4 class="good">
+                    Good Resume
+                </h4>
+
+
+                <p>
+                    Your resume is performing well.
+                    Follow the recommendations to improve your score.
+                </p>
+
+
+                <button>
+                    View Analysis
+                </button>
 
             </div>
-
 
         </section>
 
 
-        <!-- Analyze Button -->
-        <div class="button-container">
 
-            <button class="analyze-btn">
-                Analyze Resume
-            </button>
+        <!-- ==============================
+             COMMON FEATURES
+        =============================== -->
 
-        </div>
+        <section class="features-section">
+
+            <div class="section-title common">
+
+                <h2>
+                    COMMON FEATURES
+                </h2>
+
+                <p>
+                    Essential resume analysis tools
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <!-- ATS -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        ATS Compatibility
+                    </h3>
+
+                    <h2 class="green">
+                        92%
+                    </h2>
+
+                    <div class="progress">
+
+                        <div class="progress-fill ats">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Your resume is compatible with most
+                        Applicant Tracking Systems.
+                    </p>
+
+                    <button>
+                        View Report
+                    </button>
+
+                </div>
+
+
+
+                <!-- KEYWORDS -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔑
+                    </div>
+
+                    <h3>
+                        Keyword Optimisation
+                    </h3>
+
+                    <h2 class="orange">
+                        14 Missing
+                    </h2>
+
+                    <div class="progress">
+
+                        <div class="progress-fill keywords">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Add relevant keywords to improve
+                        your resume visibility.
+                    </p>
+
+                    <button>
+                        View Keywords
+                    </button>
+
+                </div>
+
+
+
+                <!-- GRAMMAR -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ✍️
+                    </div>
+
+                    <h3>
+                        Format & Grammar
+                    </h3>
+
+                    <h2 class="yellow">
+                        Good
+                    </h2>
+
+                    <div class="progress">
+
+                        <div class="progress-fill grammar">
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Your resume has a clean format
+                        with minor grammar improvements.
+                    </p>
+
+                    <button>
+                        Check Grammar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             RARE FEATURES
+        =============================== -->
+
+        <section class="features-section">
+
+            <div class="section-title rare">
+
+                <h2>
+                    RARE FEATURES
+                </h2>
+
+                <p>
+                    Advanced AI-powered career tools
+                </p>
+
+            </div>
+
+
+            <div class="rare-grid">
+
+
+                <!-- TAILOR ENGINE -->
+
+                <div class="rare-card">
+
+                    <div class="rare-icon">
+                        ✨
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Tailor Engine
+                        </h3>
+
+                        <p>
+                            Customize your resume according
+                            to a specific job description.
+                        </p>
+
+                        <button>
+                            Tailor My Resume
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- AI INTERVIEW -->
+
+                <div class="rare-card">
+
+                    <div class="rare-icon">
+                        🤖
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            AI Mock Interviewer
+                        </h3>
+
+                        <p>
+                            Practice interview questions
+                            with our AI-powered interviewer.
+                        </p>
+
+                        <button>
+                            Start Interview
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                © 2026 Resume Master AI
+            </p>
+
+        </footer>
+
 
     </main>
 
 
-    <!-- Footer -->
-    <footer>
+    <!-- Connect JavaScript -->
 
-        <p>
-            © 2026 AI Resume Analyzer | Final Year Project
-        </p>
-
-    </footer>
+    <script src="script.js"></script>
 
 </body>
 
